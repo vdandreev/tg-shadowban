@@ -13,5 +13,4 @@ shadowban_users:
   - "my-obnoxious-user-2"
 
 # Due to limitations of TG api, limit history scan to this number of messages
-offset_messages: "100"
-backoff_seconds: 1
+offset_messages: "1000"
