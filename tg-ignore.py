@@ -90,3 +90,4 @@ if __name__ == "__main__":
     client = init_tg(config)
     clean_history(client, config)
     idle()
+    client.stop()
