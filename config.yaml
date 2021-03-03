@@ -13,7 +13,5 @@ shadowban_users:
   - "my-obnoxious-user-2"
 
 # Due to limitations of TG api, limit history scan to this number of messages
-offset_messages: "1000"
-
-# Checkpoint file to store offsets for scanned messages
-checkpoint_file: "checkpoint.txt"
+offset_messages: "100"
+backoff_seconds: 1

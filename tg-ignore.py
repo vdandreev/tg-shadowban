@@ -5,6 +5,7 @@ from pyrogram import Client
 import argparse
 import yaml
 import logging
+import time
 
 logging.basicConfig(
         level="INFO",
@@ -61,6 +62,7 @@ def run_routine(client, config):
 
             LOGGER.info(f"Found {len(msg_span)} unwanted messages in {chat.title}, deleting")
             client.delete_messages(chat_id=chat.id, message_ids=msg_span)
+            time.sleep(int(config["backoff_seconds"]))
 
 
 if __name__ == "__main__":
