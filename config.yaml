@@ -1,0 +1,19 @@
+---
+# Please got to https://my.telegram.org/ to acquire your credentials
+app_id: "1234567"
+app_hash: "fjhdgkjjkjgsjhfh3267531yqhdskj"
+
+# Will perform "delete message" actions only on groups listed here
+watch_groups:
+  - "my-spam-group"
+
+# Will perform "delete message" actions on all messages from users, listed here
+shadowban_users:
+  - "my-obnoxious-user-1"
+  - "my-obnoxious-user-2"
+
+# Due to limitations of TG api, limit history scan to this number of messages
+offset_messages: "1000"
+
+# Checkpoint file to store offsets for scanned messages
+checkpoint_file: "checkpoint.txt"
