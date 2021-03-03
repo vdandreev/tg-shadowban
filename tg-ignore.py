@@ -70,7 +70,7 @@ def get_handler(users, groups):
             return
 
         if filter_user(msg.from_user, users):
-            client.delete_messages(chat_id=chat.id, message_ids=[msg.message_id])
+            client.delete_messages(chat_id=chat.id, message_ids=[msg.message_id], revoke=False)
             LOGGER.info(f"Deleted message from '{user.first_name} {user.last_name}': {msg.text}")
 
     return MessageHandler(msg_handler)
