@@ -1,3 +1,6 @@
+# Disclaimer
+Due to recent update in tg api this method no longer works. My suffering is immeasurable and my day is ruined.
+
 # Why?
 I grew a bit annoyed of several users in some of my tg channels.
 Other people found these users entertaining in their twisted way though.
